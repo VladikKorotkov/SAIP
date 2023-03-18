@@ -1,0 +1,310 @@
+* {
+	box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+	font-family: Arial;
+	margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+	padding: 60px;
+	text-align: center;
+	background-image: url(../resource/header.jpg);
+	color: white;
+	background-repeat: no-repeat;
+	height: 400px;
+	background-size: cover;
+}
+
+.header h1 {
+	font-size: 80px;
+	margin-bottom: 0px;
+	margin-top: 50px;
+}
+
+.header p {
+	font-size: 20px;
+	margin: 0px;
+}
+
+
+.navbar {
+	display: inline-block;
+	background-color: #494d4e;
+	flex: 15%;
+	text-align: center;
+}
+
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	width: 100%;
+	color: rgb(173, 173, 173);
+}
+
+.navbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.navbar h2 {
+	font-weight: lighter;
+	color: rgb(198, 198, 198);
+	font-size: normal;
+}
+
+.navbar a {
+	display: inline-block;
+	padding: 20px;
+}
+
+/* Column container */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.aside {
+	flex: 15%;
+	background-color: #f1f1f1;
+	padding: 20px;
+}
+
+/* Main column */
+.main {
+	flex: 70%;
+	/* background-image: url(../resource/2.jpg); */
+	background-color: #a9a8a8;
+	padding: 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.img {
+	width: 180px;
+}
+
+/* Footer */
+.footer {
+	display: flex;
+	padding: 10px;
+	background: #303438
+}
+
+.rights,
+.place,
+.info {
+	flex: 1;
+	text-align: center;
+	color: rgb(173, 173, 173);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+
+	.row,
+	.navbar {
+		flex-direction: column;
+	}
+}
+
+/* Ф О Р М А */
+.form_wrap {
+	/* width: 90%; */
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* .form-wrap * {
+	transition: .1s linear
+} */
+
+.name_form {
+	width: 250px;
+	float: left;
+	text-align: center;
+	color: beige;
+	padding: 30px;
+
+}
+
+.name_form h1 {
+	font-size: 35px;
+}
+
+.img_form {
+	width: 100%;
+}
+
+form {
+	float: left;
+	width: calc(100% - 250px);
+	padding: 30px;
+	height: 100%;
+	color: #7b7b7b;
+	background: rgb(243, 243, 243);
+}
+
+
+form div {
+	margin-bottom: 5px;
+	position: relative;
+}
+
+label,
+span {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="tel"] {
+	border-width: 0;
+	outline: none;
+	margin: 0;
+	width: 100%;
+	padding: 10px 15px;
+	background: #e6e6e6;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+	box-shadow: 0 0 0 2px rgba(0, 0, 0, .2);
+}
+
+input[type="number"] {
+	border-width: 0;
+	outline: none;
+	margin: 0 0 15px 0;
+	width: 50%;
+	padding: 10px 15px;
+	background: #e6e6e6;
+}
+
+input[type="color"] {
+	border-width: 0;
+	margin: 0 0 15px 0;
+	width: 20%;
+	padding: 5px 5px;
+	background: #e6e6e6;
+}
+
+input:invalid:not(:placeholder-shown) {
+	border-color: red;
+}
+
+input:valid:not(:placeholder-shown) {
+	border-color: green;
+}
+
+legend {
+	color: #303438;
+}
+
+.check-radio-box label {
+	margin: 0;
+	background-color: #e6e6e6;
+}
+
+select {
+	width: 100%;
+	cursor: pointer;
+	padding: 10px 15px;
+	outline: 0;
+	border: 0;
+	background: #e6e6e6;
+	color: #7b7b7b;
+}
+
+.button {
+	padding: 10px 0;
+	border-width: 0;
+	width: 120px;
+	margin: 10px auto 0;
+	background: #494d4e;
+	color: white;
+	font-size: 14px;
+	outline: none;
+	text-transform: uppercase;
+}
+
+.button:active {
+	background: #686a6b;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.check-radio-box span {
+	margin: 0;
+}
+
+#table {
+	border-spacing: 3px;
+}
+
+#table th {
+	background: #494d4e;
+	/* Цвет фона заголовка */
+	color: #e6e6e6;
+	/* Цвет текста */
+}
+
+td,
+th {
+	padding: 5px;
+	/* Поля в ячейках */
+	background: #8e8e8e;
+	/* Цвет фона ячеек */
+	color: #f3f3f3;
+	/* Цвет текста */
+}
+
+.text {
+	font-weight: lighter;
+	color: #494d4e;
+	font-size: 1.8em;
+	margin: 0.1em;
+	text-align: center;
+}
+
+#dl {
+	display: block;
+	width: 80%;
+	cursor: pointer;
+	padding: 10px 15px;
+	outline: 0;
+	border: 0;
+	background: #8e8e8e;
+	margin: 0 auto;
+	color: #f3f3f3;
+}
+
+.button_clear {
+	padding: 10px 0;
+	border-width: 0;
+	width: 120px;
+	margin: 10px auto;
+	background: #494d4e;
+	color: white;
+	font-size: 14px;
+	outline: none;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.button_clear:active {
+	background: #686a6b;
+}
+
+.button_clear:hover {
+	cursor: pointer;
+}

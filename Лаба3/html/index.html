@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Пора валить</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+
+<body>
+	<div class="header">
+		<h1>ПОРА ВАЛИТЬ</h1>
+		<p>Туристическое агенство</p>
+	</div>
+
+	<div class="row">
+
+		<div class="main">
+			<div class="form_wrap">
+				<div class="name_form">
+					<img src="../resource/отзыв.png" alt='Опа' class='img_form'>
+					<h1>Оставьте свой отзыв<h1>
+				</div>
+
+				<form id='form' action='javascript:saveForm()'>
+					<fieldset>
+						<legend>Личные данные</legend>
+						<div>
+							<label for="fio">Представьтесь, пожалуйста</label>
+							<input type="text" name="fio" placeholder="Введите имя" required>
+						</div>
+						<div>
+							<label for="phone">Введите номер телефона</label>
+							<input type="tel" name="phone" id="phone" placeholder="+375xxxxxxxxx"
+								pattern="^\s*\+?375((33\d{7})|(29\d{7})|(44\d{7}|)|(25\d{7}))\s*$" minlength="13"
+								maxlength="13" required>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Отзыв о компании</legend>
+						<div>
+							<label for="name_tour">Выберите название путевки</label>
+							<select id="name_tour" required>
+								<option value="Мальдивы">Мальдивы</option>
+								<option value="Альпы">Альпы</option>
+								<option value="Сочи">Сочи</option>
+								<option value="Браславские озера">Браславские озера</option>
+							</select>
+						</div>
+						<div>
+							<label for="number_form">Количество дней путевки:</label>
+							<input type="number" id="number_form" min="1" max="100" size="100" step="1" required>
+						</div>
+						<div class="check-radio-box">
+							<span>Что вам понравилось в нашей компании?</span><br>
+							<label><input type="checkbox" name="feedback" value="Качество обслуживания">Качество
+								обслуживания</label><br>
+							<label><input type="checkbox" name="feedback" value="Выгодные цены">Выгодные
+								цены</label><br>
+							<label><input type="checkbox" name="feedback" value="Многообразие путевок">Многообразие
+								путевок</label><br>
+						</div>
+						<div>
+							<label for="color_form">Выберите цвет, который ассоциируется с нами</label>
+							<input id="color_form" type="color" value="#494d4e" required>
+						</div>
+						<div class="check-radio-box">
+							<span>Оценка наших услуг</span><br>
+							<label><input type="radio" name="mark" value="Великолепно" required
+									checked>Великолепно</label><br>
+							<label><input type="radio" name="mark"
+									value="Удовлетворительно">Удовлетворительно</label><br>
+							<label><input type="radio" name="mark" value="Ну не очень">Ну не очень</label><br>
+						</div>
+					</fieldset>
+					<div>
+						<input type="submit" class='button' value="Отправить">
+						<input type="reset" class='button' value="Сбросить">
+					</div>
+				</form>
+
+			</div>
+
+		</div>
+		<div class="navbar">
+			<h2>Навигация</h2>
+			<a href="index.html">Главная</a><br>
+			<a href="index2.html" id='ab'>Результаты</a>
+		</div>
+		<div class="aside">
+			<h2>Отзывы</h2>
+			<img src="../resource/Коля.jpg" alt='Николя' class='img'>
+			<p><b>Николай Мишков:</b><br>"Хочу сказать спасибо, сотруднику фирмы Снежане за подготовку документов на
+				визу."
+			</p>
+			<img src="../resource/Иван.jpg" alt='Ванек' class='img'>
+			<p><b>Иван Борис:</b><br>"Отвратительная работа компании по организации туристической поездки."</p>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="rights">
+			<p>© 2014-2023, Vladik Design. All Rights Reserved.</p>
+		</div>
+		<div class="place">
+			<p>Беларусь, г. Минск, ул. Гикало, д. 9</p>
+		</div>
+		<div class="info">
+			<p>тел.+375 093 055 86 69<br>почта - Pora_Valit@mail.ru</p>
+		</div>
+	</div>
+	<script src="../script.js"></script>
+</body>
+
+</html>
